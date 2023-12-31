@@ -7,14 +7,14 @@ const app = express();
 const hs = http.createServer(app)
 const io = require("socket.io")(hs, {
 	cors: {
-	  origin: "http://localhost:3000",
+	  origin: "https://chat-app-yashghogre.vercel.app/",
 	  methods: ["GET", "POST"],
 	//   allowedHeaders: ["my-custom-header"],
 	  credentials: true
 	}
   });
 
-app.use(cors({origin: 'http://localhost:3000'}))
+app.use(cors({origin: 'https://chat-app-yashghogre.vercel.app/'}))
 
 io.on("connection", (socket)=> {
 	console.log("Socket.io connected", socket.id)
