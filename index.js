@@ -8,7 +8,7 @@ const hs = http.createServer(app)
 const io = require("socket.io")(hs, {
 	cors: {
 	//   origin: "http://localhost:3000",
-	  origin: "https://chat-app-gold-delta.vercel.app/",
+	  origin: "https://chat-app-gold-delta.vercel.app/chat",
 	  methods: ["GET", "POST"],
 	//   allowedHeaders: ["my-custom-header"],
 	  credentials: true
